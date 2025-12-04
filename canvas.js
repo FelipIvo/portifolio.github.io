@@ -40,3 +40,12 @@ window.addEventListener('resize', () => {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("popup-overlay");
+  const closeBtn = document.getElementById("close-popup");
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+});
